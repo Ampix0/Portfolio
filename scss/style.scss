@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@import "../scss/reset",
+        "../scss/framework",
+        "../scss/components",
+        "../scss/colors",
+        "../scss/debug"
+        ;
+
+
+//Global Styles
+@import url('https://fonts.googleapis.com/css?family=Karla');
+body{
+    font-family: 'Karla', sans-serif;
+    color: $black;
+    font-size: 1em;
+    background-color: $white;
+}
+
+::selection{
+    background-color: $black;
+    color: $white;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav {
+    background-color: $black;
+    color: $white;
+    min-width: 20em;
+    text-align: center;
+    justify-content: space-between;
+    
+    ul{
+        li{
+            
+        }
+        li:hover{
+            background-color: $blue;
+        }
+    }
+    
+    .social{
+        padding: 2em;
+        
+        .navSocialIcon{
+            padding: 0.5em;
+        }
+    }
+    
+    #hireMe{
+        display: block;
+        background-color: $blue;
+        height: 6em;
+        line-height: 6em;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    
+    ul{
+        li{
+            padding: 1em;
+        }
+    }
+}
+
+
+.mainWrapper {
+    width: 80%;
+    display: flex;
+    margin: 0px auto;
+    justify-content: flex-start;
+}
+
+
+a{
+    color: $blue;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 0.1em solid $blue;
+}
+
+//icons
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-embed2 {
+  width: 1.25em;
+}
